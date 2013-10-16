@@ -30,8 +30,8 @@ public class TemperatureTest {
 	@Test
 	/*
 	 * these test cases check if the getUnits method.
-	 * there are three test cases checking if the cases with 
-	 * celcius, fahrenheit and kelvin.
+	 * there are three test cases checking the three
+	 * possible cases with are celcius, fahrenheit and kelvin.
 	*/
 	public void testgetUnits()
 	{
@@ -41,9 +41,9 @@ public class TemperatureTest {
 	}
 	
 	@Test
-	/*these test cases are testing whether the getValue method.
+	/*these test cases are testing the getValue method.
 	 * There are three test cases  testing if the method works for 
-	 * celcius, fahrenheit, kelvin
+	 * celcius, fahrenheit and kelvin.
 	 */	
 	public void testgetValue()
 	{
@@ -55,8 +55,8 @@ public class TemperatureTest {
 	@Test
 	/*
 	 * these test cases are testing the change units methods that is supposed to change the units of the temperature
-	 * 6 cases where tested. from celcius to kelvin and fahrenheit, 
-	 * from fahrenheit to celcius and kelvin and finally kelvin to celcius and fahrenheit
+	 * 6 cases where tested. from celcius to kelvin and to fahrenheit, 
+	 * from fahrenheit to celcius and to kelvin and finally kelvin to celcius and to fahrenheit
 	 */	
 	public void testChangeUnits()
 	{
@@ -85,22 +85,6 @@ public class TemperatureTest {
 		//checking case when converting kelvin to fahrenheit
 		temp3 = new Temperature(100.0, Temperature.Units.KELVIN);//reconstructing
 		temp3.changeUnits(Temperature.Units.FAHRENHEIT);
-		assertTrue(temp3.getUnits()==Temperature.Units.FAHRENHEIT);
-		
-		
+		assertTrue(temp3.getUnits()==Temperature.Units.FAHRENHEIT);	
 	}
-	
-	
-  // Add multiple tests to check all functions of
-  // {@Code Temperature} class.
-
-  // @Test
-  // public void .... (){
-  //    ...
-  // }
-
-  // @Test
-  // public void .... (){
-  //    ...
-  // }
 }
